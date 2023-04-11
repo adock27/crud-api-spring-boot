@@ -34,8 +34,8 @@ public class EstudianteModel {
     private String teléfono;
     private String programa;
     private String universidad;
-    @JsonIgnoreProperties(value = "id")
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "id")
+    @JsonIgnoreProperties(value = "usuario_id")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "usuario_id")
     private List<ArticuloModel> articulos;
 
   
