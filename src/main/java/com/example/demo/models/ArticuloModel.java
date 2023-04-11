@@ -5,7 +5,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "articulos")
@@ -27,6 +31,10 @@ public class ArticuloModel {
     private String descripcion;
     private String categoria;
     private String fecha;
+    @JoinColumn(name = "USUARIO_ID", referencedColumnName = "id", nullable = false)
+    @JsonIgnoreProperties("articulos")
+    @ManyToOne(optional = false)
+    private EstudianteModel usuario_id;
 
    
 
