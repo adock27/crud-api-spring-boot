@@ -40,6 +40,10 @@ public class EstudianteController {
     public ArrayList<EstudianteModel> getStudentByUniversidad(@PathVariable("id") String id) {
         return estudianteService.getByUniversidad(id);
     }
+    @GetMapping("/cedula/{id}")
+    public ArrayList<EstudianteModel> getStudentByCedula(@PathVariable("id") String id) {
+        return estudianteService.getByCedula(id);
+    }
 
     @DeleteMapping(path = "/{id}")
     public String deleteById(@PathVariable("id") int id){

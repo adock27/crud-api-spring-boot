@@ -25,6 +25,7 @@ public class EstudianteModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private int id;
+    private String cedula;
     private String nombre;
     private String apellido;
     private String fechaNacimiento;

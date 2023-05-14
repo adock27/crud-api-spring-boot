@@ -13,6 +13,7 @@ public interface EstudianteRepository extends CrudRepository<EstudianteModel, In
     public abstract Optional<EstudianteModel> findById(Integer id);
 
     public abstract ArrayList<EstudianteModel> findByUniversidad(String id);
+    public abstract ArrayList<EstudianteModel> findByCedula(String id);
 
 
 }

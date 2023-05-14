@@ -40,6 +40,9 @@ public class EstudianteService {
     public ArrayList<EstudianteModel> getByUniversidad(String id) {
         return (ArrayList<EstudianteModel>) estudianteRepository.findByUniversidad(id);
     }
+    public ArrayList<EstudianteModel> getByCedula(String id) {
+        return (ArrayList<EstudianteModel>) estudianteRepository.findByCedula(id);
+    }
 
 
    
