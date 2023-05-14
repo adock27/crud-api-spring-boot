@@ -1,0 +1,156 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "SpringBootApi",
+    "dateExported": "2023-05-14T05:11:44.728Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "f0048a0e-eea8-4637-b7f6-3fe8f2641c82",
+            "name": "Estudiantes",
+            "containerId": "",
+            "created": "2023-05-13T20:59:27.451Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "a2a3f102-683d-427f-9ad3-4e4bcf2086b7",
+            "name": "Articulos",
+            "containerId": "",
+            "created": "2023-05-13T20:59:27.452Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "0b4d966d-2d75-419e-9ffa-3bc6009c417b",
+            "colId": "94fbe500-8826-43a0-86d7-3e125f79f695",
+            "containerId": "f0048a0e-eea8-4637-b7f6-3fe8f2641c82",
+            "name": "GET Estudiantes",
+            "url": "http://localhost:9090/estudiantes",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-05-13T20:59:27.451Z",
+            "modified": "2023-05-13T20:59:27.451Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b3dcc623-dfdb-4605-b48b-e6ad0e1ec4a7",
+            "colId": "94fbe500-8826-43a0-86d7-3e125f79f695",
+            "containerId": "a2a3f102-683d-427f-9ad3-4e4bcf2086b7",
+            "name": "GET Articulos",
+            "url": "http://localhost:9090/articulos",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-05-13T20:59:27.452Z",
+            "modified": "2023-05-13T20:59:27.452Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "18b59eff-1a22-4440-9472-37fbd6a7a0dc",
+            "colId": "94fbe500-8826-43a0-86d7-3e125f79f695",
+            "containerId": "a2a3f102-683d-427f-9ad3-4e4bcf2086b7",
+            "name": "POST Articulo",
+            "url": "http://localhost:9090/articulos",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-05-13T20:59:27.453Z",
+            "modified": "2023-05-13T21:02:39.457Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Asus 2222222\",\n  \"marca\": \"Asus\",\n  \"precioventa\": \"3500000\",\n  \"preciocompra\": \"3000000\",\n  \"iva\": \"15%\",\n  \"modelo\": \"2022\",\n  \"proveedor\": \"Asus\",\n  \"tienda\": \"Cartagena\",\n  \"cantidad\": \"120\",\n  \"descripcion\": \"Portatil gamer de alto rendimiento i9\",\n  \"categoria\": \"portatiles\",\n  \"fecha\": \"2023-03-02\",\n  \"usuario_id\": {\n    \"id\": 1\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "49ff9714-2b9d-44b5-aeaa-7f742a8782ab",
+            "colId": "94fbe500-8826-43a0-86d7-3e125f79f695",
+            "containerId": "f0048a0e-eea8-4637-b7f6-3fe8f2641c82",
+            "name": "POST Estudiantes",
+            "url": "http://localhost:9090/estudiantes",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-05-13T20:59:27.454Z",
+            "modified": "2023-05-13T22:03:49.481Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Brayan\",\n  \"apellido\": \"orozco dumet\",\n  \"fechaNacimiento\": \"27-05-1999\",\n  \"semestre\": \"7\",\n  \"email\": \"andersondumet@gmail.com\",\n  \"genero\": \"M\",\n  \"teléfono\": \"3002620031\",\n  \"programa\": \"Ingenieria de sistemas\",\n  \"universidad\": \"Unicolombo\",\n  \"articulos\": null\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5d845457-9842-4b85-8e74-5c48e301501c",
+            "colId": "94fbe500-8826-43a0-86d7-3e125f79f695",
+            "containerId": "a2a3f102-683d-427f-9ad3-4e4bcf2086b7",
+            "name": "PUT Articulo",
+            "url": "http://localhost:9090/articulos",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-05-13T20:59:27.455Z",
+            "modified": "2023-05-13T20:59:27.455Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 44,\n  \"nombre\": \"Asus 9999\",\n  \"marca\": \"Asus\",\n  \"precioventa\": \"3500000\",\n  \"preciocompra\": \"3000000\",\n  \"iva\": \"15%\",\n  \"modelo\": \"2022\",\n  \"proveedor\": \"Asus\",\n  \"tienda\": \"Cartagena\",\n  \"cantidad\": \"120\",\n  \"descripcion\": \"Portatil gamer de alto rendimiento i9\",\n  \"categoria\": \"portatiles\",\n  \"fecha\": \"2023-03-02\",\n  \"usuario_id\": {\n    \"id\": 3,\n    \"nombre\": \"Ingeniero Anderson\",\n    \"apellido\": \"orozco dumet\",\n    \"fechaNacimiento\": \"27-05-1999\",\n    \"semestre\": \"7\",\n    \"email\": \"andersondumet@gmail.com\",\n    \"genero\": \"M\",\n    \"teléfono\": \"3002620031\",\n    \"programa\": \"Ingenieria de sistemas\",\n    \"universidad\": \"Unicolombo\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4d1239e3-ce59-4109-97c0-c165f83c41f2",
+            "colId": "94fbe500-8826-43a0-86d7-3e125f79f695",
+            "containerId": "f0048a0e-eea8-4637-b7f6-3fe8f2641c82",
+            "name": "PUT Estudiantes",
+            "url": "http://localhost:9090/estudiantes",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-05-13T20:59:27.456Z",
+            "modified": "2023-05-13T20:59:27.456Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 10,\n  \"nombre\": \"bryan\",\n  \"apellido\": \"orozco dumet\",\n  \"fechaNacimiento\": \"27-05-1999\",\n  \"semestre\": \"7\",\n  \"email\": \"andersondumet@gmail.com\",\n  \"genero\": \"M\",\n  \"teléfono\": \"3002620031\",\n  \"programa\": \"Ingenieria de sistemas\",\n  \"universidad\": \"Unicolombo\",\n  \"articulos\": null\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2e233d23-7775-4d18-bae3-2c395bd67a6e",
+            "colId": "94fbe500-8826-43a0-86d7-3e125f79f695",
+            "containerId": "f0048a0e-eea8-4637-b7f6-3fe8f2641c82",
+            "name": "DELETE Estudiantes ",
+            "url": "http://localhost:9090/estudiantes/3",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-05-13T20:59:27.457Z",
+            "modified": "2023-05-14T01:13:39.038Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5001a7a0-ae0c-4b6a-8fd2-d4c380510164",
+            "colId": "94fbe500-8826-43a0-86d7-3e125f79f695",
+            "containerId": "a2a3f102-683d-427f-9ad3-4e4bcf2086b7",
+            "name": "DELETE Articulo",
+            "url": "http://localhost:9090/articulos/45",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-05-13T20:59:27.458Z",
+            "modified": "2023-05-13T20:59:27.458Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

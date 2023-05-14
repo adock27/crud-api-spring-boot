@@ -33,3 +33,4 @@ build/
 .vscode/
 DatabaseDerby
 .mvn
+derby.log

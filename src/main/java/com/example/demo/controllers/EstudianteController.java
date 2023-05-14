@@ -41,7 +41,7 @@ public class EstudianteController {
         return estudianteService.getByUniversidad(id);
     }
 
-    @DeleteMapping(path = "/eliminar/{id}")
+    @DeleteMapping(path = "/{id}")
     public String deleteById(@PathVariable("id") int id){
         boolean ok  = this.estudianteService.deleteStudentById(id);
         if (ok) {
