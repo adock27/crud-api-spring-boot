@@ -36,6 +36,15 @@ public class EstudianteService {
         }
 
     }
+    public boolean deleteStudentByCedula(Integer id) {
+        try {
+            estudianteRepository.deleteById(id);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+
+    }
 
     public ArrayList<EstudianteModel> getByUniversidad(String id) {
         return (ArrayList<EstudianteModel>) estudianteRepository.findByUniversidad(id);

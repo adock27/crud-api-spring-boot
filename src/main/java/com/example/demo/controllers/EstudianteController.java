@@ -54,4 +54,13 @@ public class EstudianteController {
             return "No se pudo eliminar el Estudiante con ID: "+ id;
         }
     }
+    @DeleteMapping(path = "/cedula/{id}")
+    public String deleteByCedula(@PathVariable("id") int id){
+        boolean ok  = this.estudianteService.deleteStudentByCedula(id);
+        if (ok) {
+            return "Se eliminó el Estudiante con ID: "+ id;
+        }else{
+            return "No se pudo eliminar el Estudiante con ID: "+ id;
+        }
+    }
 }
